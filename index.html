@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chumachenko HW 21</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="header clearfix">
+        <div class="layout-positioneer">
+            <div class="layout-column-1">
+                <p>Prechu</p>
+            </div>
+            <div class="layout-column-2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+           </div>
+        </div>
+    </div>
+        
+    <div class="promo clearfix">
+		<div class="layout-positioneer">
+			<div class="layout-column-1"></div>
+
+            <div class="layout-column-2">
+
+                <h1>Lorem Ipsum is simply</h1>
+                <p>dummy text of the</p>
+                <p>printing &amp; typesetting</p>
+                <div class="shape" id='showLoginForm'><a href="#"><p>Sign up now</p></a></div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel">Login form</h4>
+                            </div>
+                            <div class="modal-body">
+                                  
+                                <form id='mainFormLogin' name='mainFormLogin'>
+                                    <p><label>Введите логин <input type='text' name='login' id='login' class='loginInput'></label></p>
+                                    <p><label>Введите пароль <input type='password' name='password' id="password" class='passInput'></label></p>
+                                    <input type='button' value='Log in' id='finishLoginButton' class="btn btn-primary btn-lg"></p>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+           </div>
+            
+		</div>
+	</div>
+
+    <div class="menu clearfix">
+
+        <div id="picture"></div>
+
+    </div>
+
+     <div class="shopping">
+        <div class="layout-positioneer">
+            <div class="layout-column-1">
+
+                <input class='btn btn-primary btn-lg' type='button' value='Order form' data-toggle="tooltip" data-placement="right" title="Click to fill the order form" id='showModal' />
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Order form</h4>
+                      </div>
+                      <div class="modal-body">
+                          
+                                <form id='main-form' name='mainForm'>
+                                <p><label>Введите имя и фамилию <input type='text' name='name' id='name'></label></p>
+                                <p><label>Введите номер телефона +380 <input type='text' name='phonenumber' id="phoneNumber"></label></p>
+                                <p>Выберите способ доставки:</p>
+                                <p> <label><input type="radio" name="delivery" value="courier">Курьер</label>
+                                    <label><input type="radio" name="delivery" value="self-delivery">Самовывоз с почтового отделения</label>
+                                </p>
+                                <p><span id="deliveryMethodError" class='error'></span></p>
+
+                                <select name='city'>
+                                    <option value=''>--выберите город--</option>
+                                    <option value='Kiev'>Киев</option>
+                                    <option value='Odessa'>Одесса</option>
+                                    <option value='Izmail'>Измаил</option>
+                                </select>
+                                <p><span id="cityError" class='error'></span></p>
+                                <p>Введите адрес:</p>
+                                <p><textarea name='adress' id="adress"></textarea></p>
+
+                                
+                                <p><label><input type="checkbox" name='receipt' value='getReceipt' checked> Получить на e-mail электронную квитанцию<label></p>
+                                <p><label>Введите e-mail <input type='email' name='email' id='email'></label></p>
+                                <p><span id="emailError" class='error'></span></p>
+                                <p><input type='button' value='BUY' id='finishbutton' class="btn btn-primary btn-lg"></p>
+                            </form>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="cart"></div>
+            </div>
+
+            <div class="layout-column-2">
+                <h3>Some Bullet text here</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum has been the industry's standard dummy text ever When an unknown printer took a galley of type and scrambled It to make a type specimen book. It has survived not only five centuries But also the leap into electronic typesetting, Remaining essentially unchanged. It was popularised The release of Letraset sheets containing Lorem Ipsum passages</p>
+           </div>
+            
+        </div>
+    </div>
+
+    <div class="top-footer">
+        <div class="layout-positioneer">
+            <div class="footer">
+                <p>Copyright &copy; 2012-2013 cssauthor.com</p>
+            </div>
+        </div>
+    <div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/app.js"></script> -->
+    <script type="text/javascript" src="dist.js"></script>
+
+</body>
+
+</html>

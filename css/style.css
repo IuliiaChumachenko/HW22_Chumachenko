@@ -1,0 +1,246 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout-positioneer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    width: 0;
+}
+
+ /* top-header */
+
+.header {
+    background-color: none;
+    height: 78px;   
+    padding-top: auto;
+    padding-bottom: auto;
+
+}
+
+.header .layout-column-1 {
+    width: 35%;
+    height: 40px;
+    background-color: none;
+    float: left;
+    margin-right: 10px;
+    
+}
+
+.header .layout-column-2 {
+    
+    height: 40px;
+    background-color: none;
+    float: right;    
+}
+
+
+.header p {
+	float: left;
+	font-size: 32px;
+}
+ 
+ 
+/* в хэдере логотип вспевдоэлементом :before */
+.header p:before {
+	content: "";
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: inline-block;
+	background: url(../images/quotes.png) #5094f2 no-repeat 50% 50%;
+	vertical-align: middle;
+	margin-right:10px;
+}
+
+.header a {
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	color: #979797;
+	padding-top: 16px;
+	padding-bottom: 37px;
+
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	margin-right: 10px;
+	box-sizing: border-box;
+}
+
+li:last-child {
+	margin-right: 0;
+}
+
+li:hover {
+	border-bottom: 3px solid #508cdd;
+}
+
+/* iphone */
+.promo {
+	background-image: url(../images/background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 580px;
+}
+
+.promo .layout-column-1 {
+    width: 345px;
+    height: 436px;
+    background-size: cover;
+    background-image: url(../images/iphone.png);
+    float: left;
+    margin-top: 70px;
+    margin-right: 10px;
+    
+}
+
+.promo .layout-column-2 {
+	margin-top: 150px;
+    float: right;   
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.promo h1 {
+	font-size: 35px;
+}
+
+.promo p {
+	font-size: 20px;
+}
+
+.promo .shape {
+	width: 172px;
+	font-size: 20px;
+	background-color: #5094f2;
+	/* background: #5094f2 url(shape.png) 10px 50% no-repeat; */
+}
+
+.promo .shape p {
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.promo .shape p:before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	background: url(../images/shape.png);
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.promo .shape a {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+.promo #myModalLogin{
+	color: black;
+}
+
+.promo .loginInput {
+	margin-left: 11px;
+}
+
+.promo #mainFormLogin {
+	margin-left: 70px;
+}
+
+.promo #finishLoginButton{
+	margin-left: 160px;	
+}
+
+/* menu */
+
+#picture {
+	height: 400px;
+	width: 1000px;
+	margin: 10px auto;
+	background-size: 100% 100%;
+}
+
+/* shopping */
+
+
+.shopping .layout-column-1 {
+    width: 35%;
+    padding: 0;
+    margin-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.shopping .layout-column-1 #showModal {
+	padding: 10px;
+	display: block;
+	margin:  15px auto;
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.shopping .cart {
+	height: 279px;
+	background: url(../images/cart.png) 50% 50% no-repeat;
+}
+
+.shopping .layout-column-2 {
+	margin-top: 7%;
+	margin-left: 10%;
+    width: 40%;
+    display: inline-block;
+}
+
+.shopping .layout-column-2 h3 {
+	color: #7c7d7f;
+	font-size: 26px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.shopping .layout-column-2 p {
+	font-size: 15px;
+	color: #717375;
+	line-height: 200%;
+}
+
+.shopping #name {
+	width: 480px;
+}
+
+.shopping .error {
+	color: red;
+}
+/* footer */
+
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 10px;    
+}
+
+.footer p {
+	text-align: center;
+	font-size: 15px;
+	font-color: #c8c8c8;
+	color: #717375;
+}
